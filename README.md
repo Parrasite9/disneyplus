@@ -75,3 +75,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Installed Packages
 - Styled Components
 - React Router Dom
+- firebase (npm install firebase)
+- firebase-tools (npm install -g firebase-tools)
