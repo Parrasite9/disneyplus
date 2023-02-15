@@ -10,6 +10,7 @@ function App() {
       {/* REACT ROUTER DOM STRUCTURE (ALSO VIEW INDEX.JS FOR STRUCTURE)  */}
       <Routes>
         <Route path='/' element={<Login />} />
+        {/* <Route path='/home' element={} /> */}
       </Routes>
       
     </div>
