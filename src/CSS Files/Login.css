@@ -67,3 +67,20 @@
 .signUp-button:hover {
     background-color: #0483ee;
 }
+
+.description {
+    color: hsla(0, 0, 95.3%, 1);
+    font-size: 11px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    margin-top: 2%;
+}
+
+.ctaLogoTwo {
+    max-width: 600px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+}

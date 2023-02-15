@@ -19,6 +19,8 @@ function Login() {
                         <img className='ctaLogoOne' src='/images/cta-logo-one.svg' alt="" />
                         {/* <button className='signUp-button'>SIGN UP</button> */}
                         <a className='signUp-button'>SIGN UP</a>
+                        <h2 className='description'>Get Premier Access to Raya and the Last Dragon for an addition fee with Disney+ subscription. As of 03/26/21, the price of Disney+ and The Disney Bundle will increase by $1</h2>
+                        <img className='ctaLogoTwo' src='/images/cta-logo-two.png' alt='' />
                 </div>
             </div>
         </div>
