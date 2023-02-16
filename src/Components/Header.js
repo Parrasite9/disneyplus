@@ -4,7 +4,7 @@ import { auth, provider } from '../Firebase/Firebase'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { selectUserName, selectUserEmail, selectUserPhoto, setUserLoginDetails,  } from '../Features/Users/userSlice'
+import { selectUserName, selectUserEmail, selectUserPhoto, setUserLoginDetails, setSignOutState,  } from '../Features/Users/userSlice'
 import Store from '../App/Store'
 import { async } from '@firebase/util'
 
@@ -28,13 +28,21 @@ function Header() {
     }, [userName])
 
     const handleAuth = () => {
-        auth.signInWithPopup(provider).then((result) => {
-            console.log(result);
-            setUser(result.user) // THIS WILL ALLOW YOU TO SET A NEW USER 
-        }).catch((error) => {
-            alert(error.message)
-        })
-    }
+        if (!userName) {
+            auth.signInWithPopup(provider).then((result) => {
+                console.log(result);
+                setUser(result.user) // THIS WILL ALLOW YOU TO SET A NEW USER 
+            }).catch((error) => {
+                alert(error.message)
+                })
+            } else if (userName) {
+                auth.signOut().then(() => {
+                    dispatch(setSignOutState())
+                    navigate('/')
+                }).catch((err) => alert(err.message))
+            }
+        }
+
 
     // THE FUNCTION FOR CREATING A NEW USER 
     const setUser = (user) => {
