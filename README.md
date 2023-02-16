@@ -79,3 +79,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - firebase-tools (npm install -g firebase-tools)
 - redux (npm install react-redux)
 - redux toolkit (npm install @reduxjs/tookit)
+- React Slick (npm install react-slick --save)
+- Slick Carasoul (npm install slick-carousel --save)
