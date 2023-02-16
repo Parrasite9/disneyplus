@@ -77,3 +77,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - React Router Dom
 - firebase (npm install firebase)
 - firebase-tools (npm install -g firebase-tools)
+- redux (npm install react-redux)
+- redux toolkit (npm install @reduxjs/tookit)
