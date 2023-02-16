@@ -134,6 +134,36 @@ span {
     border-radius: 100px;
   }
 
+  .avatar-section {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drop-link {
+    background-color: rgb(19, 19, 19);
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%) 0 0 18px 0;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 100px;
+    opacity: 0;
+  }
+
+  .drop-link:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+
 
 @media only screen and (max-width: 768px) {
     .navlinks {

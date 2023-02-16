@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../CSS Files/Header.css'
 import { auth, provider } from '../Firebase/Firebase'
 
@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { selectUserName, selectUserEmail, selectUserPhoto, setUserLoginDetails,  } from '../Features/Users/userSlice'
 import Store from '../App/Store'
+import { async } from '@firebase/util'
 
 function Header() {
 
@@ -15,6 +16,16 @@ function Header() {
     // ANYTIME YOU SEE useSelector, WE ARE GOING INTO THE Store.JS AND ACCESSING THE DATA 
     const userName = useSelector(selectUserName)    // USES THE useSelector TO HAVE ACCESS TO THE USERNAME 
     const userPhoto = useSelector(selectUserPhoto)  // USES THE useSelector TO HAVE ACCESS TO THE PHOTO
+
+    useEffect(() => {
+        auth.onAuthStateChanged(async (user) => {
+            if (user) { // IF USER EXIST OR LOGGED IN 
+                setUser(user)
+                console.log(user);
+                navigate('/home') // GO TO HOME PAGE
+            }
+        })
+    }, [userName])
 
     const handleAuth = () => {
         auth.signInWithPopup(provider).then((result) => {
@@ -54,7 +65,12 @@ function Header() {
                         <a href='#' className='navlink'><img src='/images/series-icon.svg' className='nav-img' /><span>SERIES</span></a>
                     </div>
 
-                    <img className='profile-pic' src={userPhoto}  />
+                    {/* <img className='profile-pic' src={userPhoto}  /> */}
+                    
+                    <div className='avatar-section'>
+                        <img className='profile-pic' src={userPhoto}  />
+                        <span className='drop-link' onClick={handleAuth}>Sign Out</span>
+                    </div>
                     
                 </>
                 )
