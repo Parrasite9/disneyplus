@@ -27,18 +27,21 @@ function ImgSlider(props) {
             <a>
                 <img className='sliderImg' src='/Images/slider-badag.jpg' />
             </a>
-            </div>
-            <div className='slideItem'>
+        </div>
+
+        <div className='slideItem'>
             <a>
                 <img className='sliderImg' src='/Images/slider-badging.jpg' />
             </a>
-            </div>
-            <div className='slideItem'>
+        </div>
+
+        <div className='slideItem'>
             <a>
                 <img className='sliderImg' src='/Images/slider-scale.jpg' />
             </a>
-            </div>
-            <div className='slideItem'>
+        </div>
+
+        <div className='slideItem'>
             <a>
                 <img className='sliderImg' src='/Images/slider-scales.jpg' />
             </a>
