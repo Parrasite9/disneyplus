@@ -30,6 +30,13 @@
     top: 0;
 }
 
+.viewerVid {
+   width: 100%;
+   height: 100%;
+   position: absolute; 
+   top: 0;
+}
+
 @media screen and (max-width: 768px) {
     .viewers-container {
         grid-template-columns: repeat(1, minmax(0, 1fr));

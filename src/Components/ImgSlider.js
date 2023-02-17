@@ -21,7 +21,6 @@ function ImgSlider(props) {
 
   return (
     <div className='imgSlider'>
-      <h2>Single Item</h2>
       <Slider {...settings} >
         <div className='slideItem'>
             <a>
@@ -41,7 +40,7 @@ function ImgSlider(props) {
             </a>
         </div>
 
-        <div className='slideItem'>
+            <div className='slideItem'>
             <a>
                 <img className='sliderImg' src='/Images/slider-scales.jpg' />
             </a>
