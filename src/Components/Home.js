@@ -12,7 +12,9 @@ function Home() {
 
       <div className='home-container'>
         {/* <img className='home-bg-img' src='/Images/home-background.png' /> */}
-        <ImgSlider />
+        <div className='carasoul'>
+            <ImgSlider />
+        </div>
         <h1>HELLO WORLD</h1>
         <h1>HELLO WORLD</h1>
       </div>
