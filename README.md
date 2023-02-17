@@ -73,7 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # CREATOR NOTES
 
 ## Installed Packages
-- Styled Components
+- Styled Components (didnt use after all. Preferred to just create CSS pages.)
 - React Router Dom
 - firebase (npm install firebase)
 - firebase-tools (npm install -g firebase-tools)

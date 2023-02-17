@@ -36,9 +36,9 @@ function Header() {
                 alert(error.message)
                 })
             } else if (userName) {
-                auth.signOut().then(() => {
+                auth.signOut().then(() => { // SIGN USER OUT
                     dispatch(setSignOutState())
-                    navigate('/')
+                    navigate('/') // REROUTE THEM BACK TO THE LOGIN PAGE
                 }).catch((err) => alert(err.message))
             }
         }

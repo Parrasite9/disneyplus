@@ -3,6 +3,10 @@ import Header from './Header'
 import '../CSS Files/Home.css'
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
+import Recommend from './Recommend'
+import NewDisney from './NewDisney'
+import Originals from './Originals'
+import Trending from './Trending'
 // import bgimg from 'public/Images/home-background.png'
 
 
@@ -17,6 +21,10 @@ function Home() {
             <ImgSlider />
         </div>
         <Viewers />
+        <Recommend />
+        <NewDisney />
+        <Originals />
+        <Trending />
         <h1>HELLO WORLD</h1>
         <h1>HELLO WORLD</h1>
       </div>
