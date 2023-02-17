@@ -39,7 +39,7 @@ function ImgSlider(props) {
                 <img className='sliderImg' src='/Images/slider-scale.jpg' />
             </a>
         </div>
-
+        
             <div className='slideItem'>
             <a>
                 <img className='sliderImg' src='/Images/slider-scales.jpg' />
