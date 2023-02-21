@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Originals() {
   return (
     <div className='newDisney'>
-        <h4>New to Disney+</h4>
+        <h4>Originals</h4>
 
         <div className='recommend-container'>
 

@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 function Trending() {
   return (
-    <div className='newDisney'>
-        <h4>New to Disney+</h4>
+    <div className='trending'>
+        <h4>Trending</h4>
 
         <div className='recommend-container'>
 
